@@ -1,0 +1,33 @@
+:root{
+
+    --primary-color: #3a7bd6;
+    --secondary-color: #e7eaea;
+
+}
+
+.btn-primary{
+    background-color: var(--primary-color) !important;
+}
+
+.bg-primary{
+    background-color: var(--primary-color) !important;   
+}
+
+.bg-secondary{
+    background-color: var(--secondary-color) !important;
+}
+
+.text-primary{
+    color: var(--primary-color) !important;
+}
+
+.active {
+    color: var(--primary-color) !important;
+}
+
+.card-img{
+    height: 15rem;
+    object-fit: cover;
+    object-position: center;
+}
+

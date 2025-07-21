@@ -1,2 +1,0 @@
-### proyecto mr pc
-ola

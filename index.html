@@ -1,13 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Inicio - Mister Pc Boteo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
-    <h1>Proyecto web para Mister Pc Boteo de su empresa</h1>    
+    <!-- Header Inicia -->
+   <header class="py-2 bg-header">
+        <div class="mx-4">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+
+                <a href="index.html" class="navbar-brand color-red fw-bold">
+                    <img src="/img/logo-mr-pc.png" class="img-fluid" alt="Logo Mister Pc Boteo" width="70">
+                </a>
+
+                <button class="navbar-toggler navbar-toggler-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center justify-content-lg-end text-center text-lg-start" id="navegacion">
+                    <div class="navbar-nav d-flex flex-column flex-lg-row ">
+                        <a href="index.html" class="nav-link active">Inicio</a>
+                        <a href="sobre-nosotros.html" class="nav-link text-dark">Sobre Nosotros</a>
+                        <a href="#" class="nav-link text-dark">Servicios</a>
+                        <a href="#" class="nav-link text-dark">Productos</a>
+                        <a href="#" class="nav-link text-dark">Contacto</a>
+                    </div>
+                    <a class="btn btn-primary ms-md-5 fw-bold px-4" href="#">Acceder</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header Finaliza -->
+
+    <!-- Hero Inicia -->
+    <section class="position-relative overflow-hidden">
+
+        <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-50 start-50 translate-middle" style="object-fit: cover; z-index: -1;">
+            <source src="./video/video-header.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+
+        <div class="position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.4); z-index: 0;"></div>
+
+        <div class="container position-relative text-white" style="z-index: 1;">
+            <div class="row">
+                <div class="col-md-7 gap-4 d-flex flex-column justify-content-center" style="height: 90vh;">
+                    <h1 class="fw-bold display-5">Soluciones  tecnológicas para todos tus dispositivos</h1>
+                    <p>Especialistas en repuestos de hardware y servicios de mantenimiento para mantener tus equipos funcionando al máximo rendimiento.
+                        Bienvenido a la clínica de tu PC.</p>
+                    <div>
+                        <a href="#" class="btn btn-primary text-white mt-3 w-auto">
+                            Explorar Servicios <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Termina -->
+
+    <!-- Nuestros servicios Inicia -->
+     <section class="bg-secondary">
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 class="text-primary fw-bold">Nuestros Servicios</h2>
+            </div>
+            <secton class="row mx-2 mx-lg-0 my-5 justify-content-center">
+                <div class="col-xl-4 mb-3 mb-xl-0">
+                    <div class="bg-light rounded text-center py-5 px-4">
+                        <img src="/img/mantenimiento.png" alt="mantenimiento" width="120">
+                        <h5 class="text-primary fw-bold mt-3">Mantenimiento</h5>
+                        <p>Solucionamos problemas de hardware y software en computadoras de escritorio y portátiles de todas las marcas. </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3 mb-xl-0">
+                    <div class="bg-light rounded text-center py-5 px-4">
+                        <img src="/img/reparar.png" alt="reparacion" width="120">
+                        <h5 class="text-primary fw-bold mt-3">Reparación de equipos</h5>
+                        <p>Solucionamos problemas de hardware y software en computadoras de escritorio y portátiles de todas las marcas. </p>
+                    </div>
+                </div>
+                <div class="col-xl-4 mb-3 mb-xl-0">
+                    <div class="bg-light rounded text-center py-5 px-4">
+                        <img src="/img/repuestos.png" alt="repuestos" width="120">
+                        <h5 class="text-primary fw-bold mt-3">Venta de repuestos</h5>
+                        <p>Solucionamos problemas de hardware y software en computadoras de escritorio y portátiles de todas las marcas. </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- Nuestros servicios Finaliza -->
+
+    <!-- Productos Destacados Inicia -->
+     <section>
+        <div class="container py-5">
+            <div class="text-center">
+                <h2 class="text-primary fw-bold">Productos Destacados</h2>
+            </div>
+            <div class="row mx-2 mx-lg-0 my-5">
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/cpu.jpg" class="card-img-top card-img" alt="imagen de cpu">
+                        </a>
+                        <div class="card-body bg-secondary">
+                            <h5 class="card-title text-primary mt-3">Intel 7!</h5>
+                            <p class="card-text">Procesador Intel Core I7 contiene 2 nucleos y velocidad de 23 revolutions por minuto.</p>
+                            <p class="card-text text-primary fw-bold">$100.0</p>
+                            <a href="#" class="btn btn-primary w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/cpu.jpg" class="card-img-top card-img" alt="imagen de cpu">
+                        </a>
+                        <div class="card-body bg-secondary">
+                            <h5 class="card-title text-primary mt-3">Intel 7!</h5>
+                            <p class="card-text">Procesador Intel Core I7 contiene 2 nucleos y velocidad de 23 revolutions por minuto.</p>
+                            <p class="card-text text-primary fw-bold">$100.0</p>
+                            <a href="#" class="btn btn-primary w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/cpu.jpg" class="card-img-top card-img" alt="imagen de cpu">
+                        </a>
+                        <div class="card-body bg-secondary">
+                            <h5 class="card-title text-primary mt-3">Intel 7!</h5>
+                            <p class="card-text">Procesador Intel Core I7 contiene 2 nucleos y velocidad de 23 revolutions por minuto.</p>
+                            <p class="card-text text-primary fw-bold">$100.0</p>
+                            <a href="#" class="btn btn-primary w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-4 mb-xl-0">
+                    <div class="card">
+                        <a href="#">
+                            <img src="./img/cpu.jpg" class="card-img-top card-img" alt="imagen de cpu">
+                        </a>
+                        <div class="card-body bg-secondary">
+                            <h5 class="card-title text-primary mt-3">Intel 7!</h5>
+                            <p class="card-text">Procesador Intel Core I7 contiene 2 nucleos y velocidad de 23 revolutions por minuto.</p>
+                            <p class="card-text text-primary fw-bold">$100.0</p>
+                            <a href="#" class="btn btn-primary w-100">Comprar ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Productos Destacados Finaliza -->
+
+    <!-- El porque elegirnos inicia -->
+    <section class="bg-secondary py-5">
+        <div class="container">
+            <div class="row mx-2 mx-md-0 align-items-center">
+                <div class="col-lg-6 text-lg-start text-black">
+                    <h2 class="text-primary fw-bold">¿Por qué elegirnos?</h2>    
+                        <p>En Repuestos y Mantenimiento Tech nos dedicamos a ofrecer soluciones tecnológicas de calidad con un servicio personalizado y profesional.</p>
+                    <ul class="list-unstyled mt-4">
+                        <li class="d-flex align-items-start mb-3 gap-3">
+                            <i class="bi bi-check2-circle fs-2 text-primary"></i>
+                            <div>
+                                <h5  class="text-primary fw-bold"> Técnicos Certificados:</h5>
+                                <p class="m-0">Nuestro equipo cuenta con certificaciones y años de experiencia en el sector tecnológico.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3 gap-3">
+                            <i class="bi bi-patch-check fs-2 text-primary"></i>
+                            <div>
+                                <h5 class="text-primary fw-bold"> Repuestos Originales:</h5>
+                                <p>Trabajamos únicamente con componentes originales y de las mejores marcas del mercado.</p>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-start mb-3 gap-3">
+                            <i class="bi bi-clock-history fs-2 text-primary"></i>
+                            <div>
+                                <h5 class="text-primary fw-bold"> Servicio Rápido:</h5>
+                                <p>Entendemos la importancia de tus equipos, por eso ofrecemos soluciones en el menor tiempo posible.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    </div>
+                        <div class="col-lg-6 text-center">
+                            <img src="img/tecnicos.jpg" alt="Técnicos trabajando en una PC" class="img-fluid rounded shadow">
+                        </div>
+                </div>
+        </div>
+    </section>
+<!-- El porque elegirnos termina -->
+
+<!--Ayuda con tus equipos inicia-->
+<section class="py-5 bg-primary">
+    <div class="container">
+        <div>
+            <div class="w-50 my-0 mx-auto text-center">
+                <h3 class="text-white fw-bold">¿Necesitas ayuda con tus equipos?</h3>
+                <p class="text-white my-4">Contáctanos hoy mismo y descubre cómo podemos ayudarte a mantener tus dispositivos funcionandoperfectamente.</p>
+                <a href="#" class="btn btn-light text-primary">Contáctanos ahora</a>                                                                
+            </div>
+        </div>
+    </div>
+</section>
+<!--ayuda con tus equipos termina-->
+
+<!--footer inicia-->
+<footer class="bg-light py-5">
+  <div class="container text-primary">
+    <div class="row gy-4 text-start">
+
+      <!--Parrafo de texto-->
+      <div class="col-md-3">
+        <div class="mb-4">
+          <img class="img-fluid" width="70" src="/img/logo-mr-pc.png" alt="logo del maitro">
+        </div>
+        <p class="">
+          Soluciones completas para hardware y software.
+        </p>
+        <div class="d-flex gap-3">
+          <a href="https://facebook.com" target="_blank" class="fs-4 text-primary">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://whatsapp.com" target="_blank" class="fs-4 text-primary">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <!--Navegacion-->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Navegación</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+          <li><a href="#" class="text-decoration-none text-primary">Inicio</a></li>
+          <li><a href="#" class="text-decoration-none text-primary">Productos</a></li>
+          <li><a href="#" class="text-decoration-none text-primary">Sobre Nosotros</a></li>
+          <li><a href="#" class="text-decoration-none text-primary">Contacto</a></li>
+        </ul>
+      </div>
+
+      <!--Servicios-->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Servicios</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+          <li><a href="#" class="text-decoration-none text-primary">Mantenimiento</a></li>
+          <li><a href="#" class="text-decoration-none text-primary">Reparación de equipos</a></li>
+          <li><a href="#" class="text-decoration-none text-primary">Venta de repuestos</a></li>
+        </ul>
+      </div>
+
+      <!--Contacto-->
+      <div class="col-md-3">
+        <h6 class="fw-bold">Contacto</h6>
+        <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+            <li class="mb-1">Av. Aztecas 123 Ajusco, Coyoacán.<br>CP 04300, CDMX</li>
+            <li class="mb-1 fw-bold">7070 - 7070</li>
+            <li class="mb-0 fw-semibold">mrpcboteo@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!--footer termina-->
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>
