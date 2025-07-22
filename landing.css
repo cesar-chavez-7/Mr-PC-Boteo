@@ -1,10 +1,17 @@
 :root{
 
     --primary-color: #3a7bd6;
-    --secondary-color: #e7eaea;
+    --secondary-color: #E7EAEA;
+    --terciary-color: #f6f6f6;
 
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Utilidades modificadas de bootstrap inicia */
 .btn-primary{
     background-color: var(--primary-color) !important;
 }
@@ -17,6 +24,10 @@
     background-color: var(--secondary-color) !important;
 }
 
+.bg-terciary{
+    background-color: var(--terciary-color) !important;
+}
+
 .text-primary{
     color: var(--primary-color) !important;
 }
@@ -26,8 +37,168 @@
 }
 
 .card-img{
-    height: 15rem;
+    height: 13rem;
     object-fit: cover;
     object-position: center;
 }
+/* Utilidades modificadas de bootstrap finaliza */
+
+/* Codigo para seccion hero inicia */
+.hero{
+    height: 39rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+/* Codigo para seccion hero finaliza */
+
+/* Productos Seccion Home Inicia */
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr)); /* 220px */
+  gap: 1.5rem; /* 24px */
+  margin: 2rem; /* 32px */
+}
+
+.productos-scroll {
+  display: flex;
+  gap: 1.5rem; /* 16px */
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem; /* 16px */
+}
+
+.productos-scroll::-webkit-scrollbar {
+  height: 0.5rem; /* 8px */
+}
+
+.productos-scroll::-webkit-scrollbar-thumb {
+  background: #0d6efd; /* Bootstrap primary */
+  border-radius: 0.25rem; /* 4px */
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 15rem;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  scroll-snap-align: start;
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.img-card {
+  width: 100%;
+  height: 13rem;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  height: 9rem;
+  overflow: hidden;
+}
+
+.product-label {
+  font-size: 0.8rem;
+}
+
+.card-title-size {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.product-container {
+  position: relative;
+}
+
+.scroll-btn {
+  background: var(--primary-color);
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, color 0.3s;
+  z-index: 10;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.scroll-btn.left {
+  left: 0.5rem;
+}
+
+.scroll-btn.right {
+  right: 0.5rem;
+}
+
+.scroll-btn:disabled {
+  background: #aaa;
+  color: #eee;
+  cursor: default;
+}
+
+.product-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 2rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.product-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Productos Seccion Home Finaliza */
+
+
+
+/* Opcional: controla que la imagen no crezca demasiado */
+.img-limitada {
+  max-height: 15rem; /* Ajustá según el alto de tu contenido */
+  width: auto;
+  object-fit: cover;
+}
+
+
+.card-value {
+  background-color: #ffffff;
+  border-radius: .5rem;
+  box-shadow: 
+    0 1px 4px rgba(255, 255, 255, 0.1),  /* luz blanca más suave */
+    0 2px 8px rgba(0, 0, 0, 0.2);        /* sombra negra más ligera */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 250px;
+}
+
+.card-value:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 4px 20px rgba(255, 255, 255, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.valor-icon {
+  width: 70px;
+  height: 70px;
+}
+
+.img-valor {
+  height: 80px;
+  object-fit: contain;
+}
+
 

@@ -7,76 +7,88 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="./landing.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        .hero{
+             background-image: url(./img/nosotros.png); /*Añadir la url del hero aca no en style.css*/
+        }
+    </style>
 </head>
 <body>
     <!-- Header Inicia -->
    <header class="py-2 bg-header">
         <div class="mx-4">
             <nav class="navbar navbar-expand-lg navbar-light p-0">
-
                 <a href="index.html" class="navbar-brand color-red fw-bold">
                     <img src="/img/logo-mr-pc.png" class="img-fluid" alt="Logo Mister Pc Boteo" width="70">
                 </a>
 
-                <button class="navbar-toggler navbar-toggler-white" type="button" data-bs-toggle="collapse" data-bs-target="#navegacion">
+                <!-- Botón hamburguesa abre el offcanvas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse justify-content-center justify-content-lg-end text-center text-lg-start" id="navegacion">
-                    <div class="navbar-nav d-flex flex-column flex-lg-row ">
-                        <a href="index.html" class="nav-link">Inicio</a>
-                        <a href="#" class="nav-link active text-dark">Sobre Nosotros</a>
-                        <a href="#" class="nav-link text-dark">Servicios</a>
-                        <a href="#" class="nav-link text-dark">Productos</a>
-                        <a href="#" class="nav-link text-dark">Contacto</a>
+                <!-- Navegación en pantallas grandes -->
+                <div
+                    class="collapse navbar-collapse justify-content-center justify-content-lg-end text-center text-lg-start d-none d-lg-flex">
+                    <div class="navbar-nav d-flex flex-column flex-lg-row">
+                        <a href="index.html" class="nav-link text-dark">Inicio</a>
+                        <a href="sobre-nosotros.html" class="nav-link text-dark active">Sobre Nosotros</a>
+                        <a href="servicios.html" class="nav-link text-dark">Servicios</a>
+                        <a href="productos.html" class="nav-link text-dark">Productos</a>
+                        <a href="contacto.html" class="nav-link text-dark">Contacto</a>
                     </div>
-                    <a class="btn btn-primary ms-md-5 fw-bold px-4" href="iniciar-sesion.html">Acceder</a>
+                    <a class="btn btn-primary ms-md-5 fw-bold px-4" href="./iniciar-sesion.html">Acceder</a>
                 </div>
             </nav>
         </div>
     </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" style="width: 250px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link text-dark">Inicio</a>
+                <a href="sobre-nosotros.html" class="nav-link text-dark active">Sobre Nosotros</a>
+                <a href="servicios.html" class="nav-link text-dark">Servicios</a>
+                <a href="productos.html" class="nav-link text-dark">Productos</a>
+                <a href="contacto.html" class="nav-link text-dark">Contacto</a>
+                <a class="btn btn-primary fw-bold mt-3" href="./iniciar-sesion.html">Acceder</a>
+            </div>
+        </div>
+    </div>
     <!-- Header Finaliza -->
 
-    <!-- Hero Inicia -->
-    <section class="position-relative overflow-hidden">
-        <div class="container-fluid p-0 m-0">
-            <div class="position-relative" style="background-image: url('/img/nosotros.png'); background-size: cover; height: 500px;">
-                <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
-                    <div class="position-absolute top-50 start-50 translate-middle text-center text-white rounded">
-                        <h1 class="fw-bold display-5">¿Quienes somos?</h1>
-                        <br>
-                        <p class="display-7">Conoce la historia, misión y valores que impulsan a Repuestos y Mantenimiento Tech a ser líderes en el sector tecnológico</p>
-                    </div>
+     <!-- Hero Inicia -->
+    <section class="hero position-relative text-white px-2 px-lg-0">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+        <div class="container-lg h-100 position-relative">
+            <div class="row h-100 align-items-center mx-lg-0">
+                <div class="col-md-6">
+                    <h1 class="fw-semibold display-5 mb-4">¿Quiénes somos?</h1>
+                    <p>Conoce la historia, misión y valores que impulsan a Mister Pc Boteo a ser líderes en el sector tecnológico</p>
                 </div>
             </div>
+        </div>
     </section>
     <!-- Hero Termina -->
 
     <!-- Quienes somos inicia -->
-     <section class="bg-secondary">
-        <div class="container py-5">
-            <div class="row mx-2 mx-md-0 align-items-center">
-                <div class="text-start col-lg-6 text-lg-start text-black mt-4">
-                    <h3 class="text-primary fw-bold">¿Quienes somos?</h3>
-                    <br>
-                    <p>Fundada en 2005 por un grupo de ingenieros apasionados
-                        por la tecnología, Repuestos y Mantenimiento Tech nació
-                        con la visión de ofrecer soluciones integrales para el
-                        mantenimiento y reparación de equipos informáticos.</p>
-                    <br>
-                    <p>Lo que comenzó como un pequeño taller en Ciudad Tech, ha
-                        crecido hasta convertirse en una empresa referente en el
-                        sector, con más de 50 profesionales altamente cualificados
-                        y miles de clientes satisfechos en todo el país.</p>
-                    <br>
-                    <p>A lo largo de estos años, hemos evolucionado
-                        constantemente, incorporando las últimas tecnologías y
-                        metodologías para ofrecer un servicio de excelencia,
-                        manteniendo siempre nuestro compromiso con la calidad y
-                        la satisfacción del cliente.</p>
+     <section class="">
+        <div class="container-lg py-5">
+            <h3 class="text-primary fw-semibold text-center">¿Quienes somos?</h3>
+            <div class="row mx-2 mx-lg-0 align-items-center justify-content-between mt-5">
+                <div class="col-lg-6 text-lg-start text-black">
+                    <p class="text-center text-lg-start">TechnoDev Innovations es una empresa dedicada al desarrollo de soluciones tecnológicas innovadoras para emprendedores y pequeñas empresas. Nos especializamos en la creación de páginas web personalizadas, estrategias de marketing digital y consultoría tecnológica. Nuestro enfoque es brindar herramientas accesibles y eficientes para impulsar la presencia digital de nuestros clientes, ayudándolos a crecer en un mundo cada vez más tecnológico.</p>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <img src="/img/nosostros-seccion.jpg" alt="" class="img-fluid rounded shadow">
+                <div class="col-lg-5 text-center mt-4 mt-lg-0">
+                    <img src="./img/logo-mr-pc.png" alt="Imagen" class="img-fluid rounded shadow" width="300">
                 </div>
             </div>
         </div>
@@ -84,56 +96,177 @@
      <!-- Quienes somos termina-->
 
      <!-- Mision y Vision inicia -->
-      <section>
-    <div class="container py-5 ">
-      <div class="row gap-4 justify-content-center">
+    <section>
+        <div class="py-3 px-2 px-lg-0">
+            <div class="container-lg my-5">
+                <div class="row justify-content-center g-5">
+                    
+                    <!-- Visión -->
+                    <div class="col-lg-5">
+                    <h3 class="text-primary text-center mb-3 fw-semibold">Visión</h3>
+                    <div class="w-100 rounded">
+                        <div class="bg-secondary text-center px-4 py-5 rounded">
+                        <p class="">
+                            Ser reconocidos como la empresa líder en el sector de mantenimiento y repuestos tecnológicos, destacando por nuestra innovación, excelencia en el servicio y compromiso con la sostenibilidad, expandiendo nuestra presencia a nivel nacional e internacional.
+                        </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="d-none d-lg-block col-lg-1"></div>
 
-        <!-- Visión -->
-        <div class="col-xl-4 mb-3 mb-xl-0">
-          <h3 class="mb-3 text-primary text-center">Visión</h3>
-          <div class="card w-100">
-            <div class="card-body bg-secondary">
-              <p class="card-text py-3 px-4">Ser reconocidos como la empresa líder en el
-                sector de mantenimiento y repuestos
-                tecnológicos, destacando por nuestra innovación,
-                excelencia en el servicio y compromiso con la
-                sostenibilidad, expandiendo nuestra presencia a
-                nivel nacional e internacional.</p>
-            </div>
-          </div>
+                    <!-- Misión -->
+                    <div class="col-lg-5">
+                        <h3 class="text-primary text-center mb-3 fw-semibold">Misión</h3>
+                        <div class="w-100">
+                            <div class="bg-secondary text-center px-4 py-5 rounded">
+                            <p class="">
+                                Proporcionar soluciones tecnológicas integrales de alta calidad, ofreciendo repuestos originales y servicios de mantenimiento especializados que garanticen el óptimo funcionamiento de los equipos de nuestros clientes, contribuyendo así a su productividad y satisfacción.
+                            </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
         </div>
-        
-        <!-- Misión -->
-        <div class="col-xl-4 mb-3 mb-xl-0">
-          <h3 class="mb-3 text-primary text-center">Misión</h3>
-          <div class="card w-100">
-            <div class="card-body bg-secondary">
-              <p class="card-text py-3 px-4">Proporcionar soluciones tecnológicas integrales
-                de alta calidad, ofreciendo repuestos originales
-                y servicios de mantenimiento especializados
-                que garanticen el óptimo funcionamiento de los
-                equipos de nuestros clientes, contribuyendo así
-                a su productividad y satisfacción.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Mision y vision termina-->
 
-  <!-- Nuestros valores comienza -->
-   <section>
-    <div>
-        <div>
-            <div>
-                <div>
 
+
+  <!-- Nuestros valores comienza -->
+    <!--INICIO SECTION-->
+    <section class="bg-white py-5 px-2 px-lg-0">
+        <div class="container-lg text-center">
+            <h3 class="fw-semibold text-primary">Nuestros Valores</h3>
+            <div class="row align-items-center text-md-start mt-5">
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/calidad.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Calidad</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
                 </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/innovacion.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Innovación</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/honestidad.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Honestidad</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/pasion.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Pasion</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
+                </div>
+
+                 <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/responsabilidad.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Responsabilidad</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6 mb-4 d-flex">
+                    <div class="card-value d-flex flex-column p-4 text-center">
+                        <img src="./img/orientacion-cliente.png" class="img-valor d-block mx-auto mb-3" alt="Innovación">
+                        <h5 class="fw-bold text-center">Cercania</h5>
+                        <p>En TechnoSpark, fomentamos ideas nuevas y soluciones creativas que impulsan nuestro crecimiento.</p>
+                    </div>
+                </div>
+
+
+                
+
+            
+
             </div>
         </div>
-    </div>
-   </section>
+    </section>
+    <!--Fin-->
+
+
+    <footer class="bg-light py-5 px-2 px-lg-0">
+        <div class="container-lg">
+            <div class="row gy-4 text-start">
+
+                <!--Parrafo de texto-->
+                <div class="col-md-3">
+                    <div class="mb-2">
+                        <img class="img-fluid rounded" width="70" src="/img/logo-mr-pc.png" alt="logo del maitro">
+                    </div>
+                    <p>
+                        Soluciones completas para hardware y software.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="fs-4">
+                            <i class="bi bi-facebook text-primary"></i>
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" class="fs-4">
+                            <i class="bi bi-whatsapp text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Navegacion-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Navegación</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li><a href="#" class="nav-link">Inicio</a></li>
+                        <li><a href="#" class="nav-link">Productos</a></li>
+                        <li><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!--Servicios-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Servicios</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li><a href="#" class="nav-link">Mantenimiento</a></li>
+                        <li><a href="#" class="nav-link">Reparación de equipos</a></li>
+                        <li><a href="#" class="nav-link">Venta de repuestos</a></li>
+                    </ul>
+                </div>
+
+                <!--Contacto-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Contacto</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li class="mb-1">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                            Sonzacate Sonsonate.<br>El Salvador
+                        </li>
+                        <li class="mb-1">
+                            <i class="bi bi-telephone-fill text-primary"></i>
+                            +503 7070 - 7070
+                        </li>
+                        <li class="mb-0 fw-semibold">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            mrpcboteo@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </html>

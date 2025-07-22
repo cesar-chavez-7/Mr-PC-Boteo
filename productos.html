@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Mister Pc Boteo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./landing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./landing.css">
+    <style>
+        .hero {
+            background-image: url(./img/nosotros.png);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Inicia -->
+    <header class="py-2 bg-header">
+        <div class="mx-4">
+            <nav class="navbar navbar-expand-lg navbar-light p-0">
+                <a href="index.html" class="navbar-brand color-red fw-bold">
+                    <img src="/img/logo-mr-pc.png" class="img-fluid" alt="Logo Mister Pc Boteo" width="70">
+                </a>
+
+                <!-- Botón hamburguesa abre el offcanvas -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navegación en pantallas grandes -->
+                <div
+                    class="collapse navbar-collapse justify-content-center justify-content-lg-end text-center text-lg-start d-none d-lg-flex">
+                    <div class="navbar-nav d-flex flex-column flex-lg-row">
+                        <a href="index.html" class="nav-link text-dark">Inicio</a>
+                        <a href="sobre-nosotros.html" class="nav-link text-dark">Sobre Nosotros</a>
+                        <a href="servicios.html" class="nav-link text-dark">Servicios</a>
+                        <a href="productos.html" class="nav-link text-dark active">Productos</a>
+                        <a href="contacto.html" class="nav-link text-dark">Contacto</a>
+                    </div>
+                    <a class="btn btn-primary ms-md-5 fw-bold px-4" href="#">Acceder</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="menuLateral" style="width: 250px;">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Menú</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-link text-dark">Inicio</a>
+                <a href="sobre-nosotros.html" class="nav-link text-dark">Sobre Nosotros</a>
+                <a href="servicios.html" class="nav-link text-dark">Servicios</a>
+                <a href="productos.html" class="nav-link text-dark  active">Productos</a>
+                <a href="contacto.html" class="nav-link text-dark">Contacto</a>
+                <a class="btn btn-primary fw-bold mt-3" href="#">Acceder</a>
+            </div>
+        </div>
+    </div>
+    <!-- Header Finaliza -->
+
+    <!-- Hero Inicia -->
+    <section class="hero position-relative text-white px-2 px-lg-0">
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-25"></div>
+        <div class="container-lg h-100 position-relative">
+            <div class="row h-100 align-items-center mx-lg-0">
+                <div class="col-md-6">
+                    <h1 class="fw-semibold display-5 mb-4">Nuestros Productos y repuestos</h1>
+                    <p>Conoce la historia, misión y valores que impulsan a Mister Pc Boteo a ser líderes en el sector
+                        tecnológico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Termina -->
+
+    <section class="py-5 px-2 px-lg-0">
+        <div class="container-lg">
+
+            <h3 class="mb-4 text-primary fw-semibold">Nuestros Productos</h3>
+
+            <!-- Botones de categorías (solo visual) -->
+            <div class="mb-4">
+                <button type="button" class="btn btn-outline-dark mb-2">Todos</button>
+                <button type="button" class="btn btn-outline-dark mb-2">Memorias USB</button>
+                <button type="button" class="btn btn-outline-dark mb-2">Tarjetas Madre</button>
+                <button type="button" class="btn btn-outline-dark mb-2">Teclados</button>
+                <button type="button" class="btn btn-outline-dark mb-2">Monitores</button>
+                <button type="button" class="btn btn-outline-dark mb-2">Teléfonos</button>
+            </div>
+
+            <!-- Contenedor con scroll horizontal -->
+            <div class="product-scroll">
+
+                <!-- Producto 1 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 1 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 1 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 1 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="card">
+                    <img src="./img/cpu.jpg" class="img-card" alt="imagen de cpu">
+                    <div class="card-body bg-terciary">
+                        <span class="mb-2 product-label">BRAND</span>
+                        <h5 class="mt-1 card-title-size fw-semibold">Memoria USB para computadoras</h5>
+                        <p class="card-text text-primary fw-semibold">$20.00</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="bg-light py-5 px-2 px-lg-0">
+        <div class="container-lg">
+            <div class="row gy-4 text-start">
+
+                <!--Parrafo de texto-->
+                <div class="col-md-3">
+                    <div class="mb-2">
+                        <img class="img-fluid rounded" width="70" src="/img/logo-mr-pc.png" alt="logo del maitro">
+                    </div>
+                    <p>
+                        Soluciones completas para hardware y software.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="https://facebook.com" target="_blank" class="fs-4">
+                            <i class="bi bi-facebook text-primary"></i>
+                        </a>
+                        <a href="https://whatsapp.com" target="_blank" class="fs-4">
+                            <i class="bi bi-whatsapp text-primary"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--Navegacion-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Navegación</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li><a href="#" class="nav-link">Inicio</a></li>
+                        <li><a href="#" class="nav-link">Productos</a></li>
+                        <li><a href="#" class="nav-link">Sobre Nosotros</a></li>
+                        <li><a href="#" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <!--Servicios-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Servicios</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li><a href="#" class="nav-link">Mantenimiento</a></li>
+                        <li><a href="#" class="nav-link">Reparación de equipos</a></li>
+                        <li><a href="#" class="nav-link">Venta de repuestos</a></li>
+                    </ul>
+                </div>
+
+                <!--Contacto-->
+                <div class="col-md-3">
+                    <h5 class="fw-semibold text-primary">Contacto</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2 mt-3">
+                        <li class="mb-1">
+                            <i class="bi bi-geo-alt-fill text-primary"></i>
+                            Sonzacate Sonsonate.<br>El Salvador
+                        </li>
+                        <li class="mb-1">
+                            <i class="bi bi-telephone-fill text-primary"></i>
+                            +503 7070 - 7070
+                        </li>
+                        <li class="mb-0 fw-semibold">
+                            <i class="bi bi-envelope-fill text-primary"></i>
+                            mrpcboteo@gmail.com
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+</html>
